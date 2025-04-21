@@ -1,0 +1,76 @@
+package com.demo.rbs_bank;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class BankAccount {
+
+    private int accountNumber;
+    private double balance;
+    private final Lock lock = new ReentrantLock();
+    public BankAccount(int accountNumber,double initialbalance){
+        this.accountNumber=accountNumber;
+        this.balance=initialbalance;
+    }
+
+    public int getAccountNumber(){
+        return accountNumber;
+    }
+
+    public double getBalance(){
+        return balance;
+    }
+
+    public void setAccountNumber(int accountNumber){
+        this.accountNumber=accountNumber;
+    }
+    public void setBalance(double balance){
+        this.balance=balance;
+    }
+
+    public  void deposit_amount(Double amount){
+        try{
+        lock.lock();
+        if(amount >0){
+            balance=balance+amount;
+            System.out.println("amount deposited,new balance : "+balance);
+        }
+        else{
+            System.out.println("Invalid amount!!");
+        }
+        }
+        finally{
+            lock.unlock();
+        }
+    }
+
+    public  void withdraw_amount(Double amount){
+        try{
+            lock.lock();
+        if(amount>0 && amount<=balance){
+            balance=balance-amount;
+            System.out.println("Amount withdrawn,remaining balance: "+balance);
+        }
+        else    
+            System.out.println("Insufficient funds or invalid amount");
+        }
+        finally{
+            lock.unlock();
+        }
+    }
+
+    public void check_balance(){
+        lock.lock();
+        try{
+            System.out.println("Your balance is : "+balance);
+               }finally{lock.unlock();}
+    }
+
+    public void CalculateInterest(){
+        double Interest=0.05;
+        double InterestAdd = getBalance() * Interest;
+        deposit_amount(InterestAdd);
+        System.out.println("Interest rate is : "+InterestAdd);
+    }
+
+}
+
