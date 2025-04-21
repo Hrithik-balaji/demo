@@ -28,41 +28,28 @@ public class BankAccount {
     }
 
     public  void deposit_amount(Double amount){
-        try{
-        lock.lock();
         if(amount >0){
             balance=balance+amount;
             System.out.println("amount deposited,new balance : "+balance);
         }
         else{
             System.out.println("Invalid amount!!");
-        }
-        }
-        finally{
-            lock.unlock();
+        }  
         }
     }
 
     public  void withdraw_amount(Double amount){
-        try{
-            lock.lock();
-        if(amount>0 && amount<=balance){
+            if(amount>0 && amount<=balance){
             balance=balance-amount;
             System.out.println("Amount withdrawn,remaining balance: "+balance);
         }
         else    
             System.out.println("Insufficient funds or invalid amount");
         }
-        finally{
-            lock.unlock();
-        }
     }
 
     public void check_balance(){
-        lock.lock();
-        try{
             System.out.println("Your balance is : "+balance);
-               }finally{lock.unlock();}
     }
 
     public void CalculateInterest(){
