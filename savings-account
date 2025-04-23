@@ -1,0 +1,15 @@
+package com.demo.rbs_bank;
+public class SavingsAccounts extends BankAccount{
+    private double InterestRate=0.07;
+
+    public SavingsAccounts(int accountNumber , double Balance ,double InterestRate){
+            super(accountNumber,Balance);
+            this.InterestRate=InterestRate;
+        }
+        @Override
+    public void CalculateInterest(){
+        double Interest = getBalance() * InterestRate;
+        deposit_amount(Interest);
+        System.out.println("Interest rate is : "+Interest);
+    }
+}
