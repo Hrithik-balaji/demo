@@ -1,0 +1,13 @@
+package com.demo.rbs_bank;
+
+public class Main {
+    public static void main(String[] args) {
+        Smartphone s = new Smartphone("galaxy", "samsung");
+        Laptop l = new Laptop("ideapad","acer");
+
+        s.powerOff();
+        l.powerOn();
+
+    }
+
+}
