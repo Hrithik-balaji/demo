@@ -1,0 +1,18 @@
+package com.demo.rbs_bank;
+
+public class Smartphone extends ElectronicDevice {
+
+    public  Smartphone(String name,String brand)
+    {
+        super(name,brand);
+    }
+    @Override
+    void powerOn(){
+        System.out.println("Smartphone is powering on");
+    }
+    @Override
+    void powerOff(){
+        System.out.println("Smartphone is powering off");
+    }
+
+}
