@@ -1,0 +1,16 @@
+package com.demo.rbs_bank;
+
+public class Laptop extends ElectronicDevice {
+    public  Laptop(String name,String brand)
+    {
+        super(name,brand);
+    }
+    @Override
+    void powerOn(){
+        System.out.println("Laptop is powering on");
+    }
+    @Override
+    void powerOff(){
+        System.out.println("Laptop is powering off");
+    }
+}
