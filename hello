@@ -1,1 +1,30 @@
-print("Hello world");
+def Add(a,b):
+  return a+b;
+def sub(a,b):
+  return a-b;
+def mul(a,b):
+  return a*b;
+def div(a,b):
+  return a/b;
+d=True
+while(d)
+  a=int(input("Enter the number:")
+  b=int(input("Enter the number:")
+  print("1 Add/
+      2 sub/
+      3 multiply/
+      4 division/
+      5 exit")
+  op=int(input())
+  if op==1:
+    Add(a,b)
+  if op==2:
+    sub(a,b)
+  if op==3:
+    mul(a,b)
+  if op==4:
+    div(a,b)
+  if op==5:
+    d=False
+  else:
+    print("Invalid")
