@@ -4,6 +4,10 @@ const desposit = ()=>{
     while(true){
         const depositAmount=p("Enter the deposit amount: ");
         const Numberdeposit=parseFloat(depositAmount);
+        if(isNaN(Numberdeposit) || Numberdeposit>=0)
+            console.log("Invalid deposit!! Enter a valid deposit!");
+        else
+            return 1
         
     }
 };
