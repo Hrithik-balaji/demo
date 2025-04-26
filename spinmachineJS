@@ -1,8 +1,8 @@
-const p = Request("prompt-sync")();
+const p = require("prompt-sync")();
 
 const desposit = ()=>{
     while(true){
-        const depositAmount=prompt("Enter the deposit amount: ");
+        const depositAmount=p("Enter the deposit amount: ");
     }
 };
 desposit();
