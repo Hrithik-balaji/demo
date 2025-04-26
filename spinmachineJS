@@ -3,6 +3,8 @@ const p = require("prompt-sync")();
 const desposit = ()=>{
     while(true){
         const depositAmount=p("Enter the deposit amount: ");
+        const Numberdeposit=parseFloat(depositAmount);
+        
     }
 };
 desposit();
