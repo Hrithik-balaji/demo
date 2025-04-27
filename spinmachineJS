@@ -7,8 +7,9 @@ const desposit = ()=>{
         if(isNaN(Numberdeposit) || Numberdeposit>=0)
             console.log("Invalid deposit!! Enter a valid deposit!");
         else
-            return 1
+            return Numberdepsot;
         
     }
 };
+
 desposit();
