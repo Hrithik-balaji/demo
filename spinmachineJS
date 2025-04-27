@@ -14,11 +14,11 @@ const desposit = ()=>{
 const getNumberOfLines =()=>{
     while(true){
         const lines=p("Enter the numbers of lines to bet on(1-3): ");
-        const NumberOfLines=parseFloat(depositAmount);
-        if(isNaN(NumberOfLines) || NumberOfLines>=0)
-            console.log("Invalid deposit!! Enter a valid deposit!");
+        const NumberOfLines=parseFloat(lines);
+        if(isNaN(NumberOfLines) || NumberOfLines>=0 || NumberOfLines>3)
+            console.log("Invalid Lines!! Enter a valid number!");
         else
-            return Numberdepsot;
+            return NumberOfLines;
 
 
 
