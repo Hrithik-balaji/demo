@@ -28,6 +28,8 @@ while(d)
   if op==4:
     div(a,b)
   if op==5:
+    mod(a,b)
+  if op==6:
     d=False
   else:
     print("Invalid")
