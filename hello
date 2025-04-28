@@ -14,7 +14,8 @@ while(d)
       2 sub/
       3 multiply/
       4 division/
-      5 exit")
+      5  modulues/ 
+      6 exit")
   op=int(input())
   if op==1:
     Add(a,b)
