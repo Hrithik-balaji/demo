@@ -47,17 +47,14 @@ public class BankAccount {
             System.out.println("Insufficient funds or invalid amount");
         }
     }
-
     public void check_balance(){
             System.out.println("Your balance is : "+balance);
     }
-
     public void CalculateInterest(){
         double Interest=0.05;
         double InterestAdd = getBalance() * Interest;
         deposit_amount(InterestAdd);
         System.out.println("Interest rate is : "+InterestAdd);
     }
-
 }
 
