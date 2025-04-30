@@ -9,7 +9,7 @@ public class Laptop extends ElectronicDevice {
     void powerOn(){
         System.out.println("Laptop is powering on");
     }
-
+    @Override
     void powerOff(){
         System.out.println("Laptop is powering off");
     }
