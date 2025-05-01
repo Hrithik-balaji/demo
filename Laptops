@@ -1,5 +1,4 @@
 package com.demo.rbs_bank;
-
 public class Laptop extends ElectronicDevice {
     public  Laptop(String name,String brand)
     {
