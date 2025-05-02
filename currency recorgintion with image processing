@@ -57,3 +57,25 @@ def recognizedCurrency():
                         flag = 1
                         recognized = os.path.basename(root)
                         currency = os.path.basename(os.path.dirname(root))
+if flag == 1:
+        img_rgb = cv2.resize(img_rgb,(600,400))
+        cv2.putText(img_rgb, 'Currency Recognized as : '+currency+" "+recognized, (10, 25),  cv2.FONT_HERSHEY_SIMPLEX,0.7, (0, 0, 255), 2)
+        text.insert(END, 'Currency Value : '+recognized+"\n")
+        text.insert(END, 'Currency Name : '+currency+"\n")
+        if currency == 'INR':
+            text.insert(END, 'Currency in Euro : '+str(float(recognized) / 83.0)+"\n")
+            text.insert(END, 'Currency in USD  : '+str(float(recognized) / 75.0)+"\n")
+            cv2.putText(img_rgb, 'Currency in Euro : '+str(float(recognized) / 83.0), (10, 55),  cv2.FONT_HERSHEY_SIMPLEX,0.7, (0, 0, 255), 2)
+            cv2.putText(img_rgb, 'Currency in USD  : '+str(float(recognized) / 75.0), (10, 85),  cv2.FONT_HERSHEY_SIMPLEX,0.7, (0, 0, 255), 2)
+        if currency == 'USD':
+            text.insert(END, 'Currency in Euro : '+str(float(recognized) / 1.11)+"\n")
+            text.insert(END, 'Currency in INR  : '+str(float(recognized) * 75.0)+"\n")
+            cv2.putText(img_rgb, 'Currency in Euro : '+str(float(recognized) / 1.11), (10, 55),  cv2.FONT_HERSHEY_SIMPLEX,0.7, (0, 0, 255), 2)
+            cv2.putText(img_rgb, 'Currency in INR  : '+str(float(recognized) * 75.0), (10, 85),  cv2.FONT_HERSHEY_SIMPLEX,0.7, (0, 0, 255), 2)    
+        text.update_idletasks()    
+        cv2.imshow("original Image",img_rgb)
+        cv2.imshow("matched Image",temps)
+        cv2.waitKey(0)
+    else:
+        messagebox.showinfo("Unable to recognized", "Unable to recognized")
+
