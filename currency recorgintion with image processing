@@ -79,3 +79,12 @@ if flag == 1:
     else:
         messagebox.showinfo("Unable to recognized", "Unable to recognized")
 
+def close():
+    main.destroy()
+
+font = ('times', 14, 'bold')
+title = Label(main, text='Currency Recognition System Using Image Processing')
+title.config(bg='DarkGoldenrod1', fg='black')  
+title.config(font=font)           
+title.config(height=3, width=120)       
+title.place(x=5,y=5)
