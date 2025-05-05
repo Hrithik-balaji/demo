@@ -6,7 +6,17 @@ print("1.View/
        2.create/
        3.delete/
       ")
+if op.lower()=="View":
+       view()
+elif op.lower()=="create":
+       create()
+elif op.lower()=="delete":
+       delete()
+else:
+       print("Thanks for visiting")
+
 #adding function
+
 
 #remove or add to done
 #view
