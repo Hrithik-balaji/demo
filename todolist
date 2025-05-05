@@ -1,1 +1,13 @@
 #To do list
+#simple list
+set={}
+op=input("Enter the choice")
+print("1.View/
+       2.create/
+       3.delete/
+      ")
+#adding function
+
+#remove or add to done
+#view
+
