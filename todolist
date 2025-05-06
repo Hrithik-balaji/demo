@@ -20,6 +20,10 @@ def create():
        while(true):       
               text=input("Enter the task:")
               set.add(text)
+              print("Task added! do you want to add:Y/N")
+              op=input()
+              if op=="N":
+                     break
 
 #remove or add to done
 #view
