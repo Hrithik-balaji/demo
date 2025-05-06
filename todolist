@@ -24,7 +24,9 @@ def create():
               op=input()
               if op=="N":
                      break
-
+def view():
+       for i in range(len(set)):
+              print(set[i])
 #remove or add to done
 #view
 
