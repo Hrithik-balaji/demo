@@ -16,7 +16,10 @@ else:
        print("Thanks for visiting")
 
 #adding function
-
+def create():
+       while(true):       
+              text=input("Enter the task:")
+              set.add(text)
 
 #remove or add to done
 #view
