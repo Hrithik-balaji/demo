@@ -31,4 +31,4 @@ def view():
 #remove or add to done
 #view
 def delete():
-       
+       set.pop()
