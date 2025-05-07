@@ -2,9 +2,9 @@
 #simple list
 set={}
 op=input("Enter the choice")
-print("1.View/
-       2.create/
-       3.delete/
+print("1.View\
+       2.create\
+       3.delete\
       ")
 if op.lower()=="View":
        view()
