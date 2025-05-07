@@ -26,7 +26,9 @@ def create():
                      break
 def view():
        for i in range(len(set)):
-              print(set[i])
+              print(set[i],end="\n")
+
 #remove or add to done
 #view
-
+def delete():
+       
