@@ -4,7 +4,7 @@ public class Laptop extends ElectronicDevice {
     {
         super(name,brand);
     }
-    @Override
+
     void powerOn(){
         System.out.println("Laptop is powering on");
     }
