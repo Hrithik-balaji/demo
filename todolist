@@ -1,13 +1,35 @@
 #To do list
 #simple list
+def create():
+       while(True):       
+              text=input("Enter the task:")
+              set.add(text)
+              print("Task added! do you want to add:Y/N")
+              op=input()
+              if op=="N":
+                     break
+def view():
+    if(set !=None):
+       for i in range(len(set)):
+              print(set[i],end="\n")
+    else:
+        print("Empty list")
+             
+
+#remove or add to done
+#view
+def delete():
+       set.pop()
+
+
 set={}
 
 print("1.View\
        2.create\
        3.delete\
       ")
-op=input("Enter the choice")
-if op.lower()=="View":
+op=input("Enter the choice: ")
+if op.lower()=="view":
        view()
 elif op.lower()=="create":
        create()
@@ -17,20 +39,4 @@ else:
        print("Thanks for visiting")
 
 #adding function
-def create():
-       while(true):       
-              text=input("Enter the task:")
-              set.add(text)
-              print("Task added! do you want to add:Y/N")
-              op=input()
-              if op=="N":
-                     break
-def view():
-       for i in range(len(set)):
-              print(set[i],end="\n")
-
-#remove or add to done
-#view
-def delete():
-       set.pop()
 
