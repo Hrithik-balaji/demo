@@ -2,9 +2,9 @@
 #simple list
 def create():
        while(True):     
-              n=1    
+              n=2    
               text=input("Enter the task:")
-              for i in range(n):
+              for i in range(1,n):
                 set.update(i,text)
                 n=n+1
               print("Task added! do you want to add:Y/N")
