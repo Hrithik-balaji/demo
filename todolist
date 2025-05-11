@@ -3,7 +3,7 @@
 def create(li):
        while(True):     
             text=input("Enter the task:")
-            li.add(text)
+            li.append(text)
             print("Task added! do you want to add:Y/N")
             op=input()
             if op=="N":
