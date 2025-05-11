@@ -1,15 +1,13 @@
 #To do list
 #simple list
-def create():
+def create(li):
        while(True):     
-              n=2    
-              text=input("Enter the task:")
-                set.update(i,text)
-                n=n+1
-              print("Task added! do you want to add:Y/N")
-              op=input()
-              if op=="N":
-                     break
+            text=input("Enter the task:")
+            li.add(text)
+            print("Task added! do you want to add:Y/N")
+            op=input()
+            if op=="N":
+                break
 def view():
     if(set !=None):
        for i in range(len(set)):
@@ -30,11 +28,11 @@ print("1.View\
       ")
 op=input("Enter the choice: ")
 if op.lower()=="view":
-       view()
+       view(li)
 elif op.lower()=="create":
-       create()
+       create(li)
 elif op.lower()=="delete":
-       delete()
+       delete(li)
 else:
        print("Thanks for visiting")
 
