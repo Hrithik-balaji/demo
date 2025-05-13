@@ -6,7 +6,7 @@ def create(li):
             li.append(text)
             print("Task added! do you want to add:Y/N")
             op=input()
-            if op=="N":
+            if op=="N" or op=="n":
                 break
 def view():
     if(set !=None):
