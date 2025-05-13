@@ -7,33 +7,40 @@ def create(li):
             print("Task added! do you want to add:Y/N")
             op=input()
             if op=="N" or op=="n":
-                break
+                return True
 def view():
     if(set !=None):
        for i in range(len(set)):
               print(set[i],end="\n")
     else:
         print("Empty list")
-             
+    
 
 #remove or add to done
 #view
 def delete():
        set.pop()
+     
+
 
 li=[]
-print("1.View\
+while(True):
+    print("1.View\
        2.create\
        3.delete\
-      ")
-op=input("Enter the choice: ")
-if op.lower()=="view":
-       view(li)
-elif op.lower()=="create":
-       create(li)
-elif op.lower()=="delete":
-       delete(li)
-else:
+          ")
+    op=input("Enter the choice: ")
+    if op.lower()=="view":
+       p=view(li)
+    elif op.lower()=="create":
+       p=create(li)
+    elif op.lower()=="delete":
+       p=delete(li)
+    else:
        print("Thanks for visiting")
 
+    print("Do you want to close: ")
+    o=input()
+    if o.lower()=="n" or o.lower()=="no":
+        break
 #adding function
