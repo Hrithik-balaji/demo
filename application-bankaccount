@@ -3,11 +3,11 @@ package com.demo.rbs_bank;
 public class BankAccountApplication {
     public static void main(String[] args) {
         BankAccount rbsAccount1 = new BankAccount(101,15000.00);
-        /*System.out.println(rbsAccount1.getAccountNumber());
+        system.out.println(rbsAccount1.getAccountNumber());
         rbsAccount1.deposit_amount(20000.00);
         rbsAccount1.withdraw_amount(1000.00);
         rbsAccount1.check_balance();
-        rbsAccount1.CalculateInterest();*/
+        rbsAccount1.CalculateInterest();
         BankAccount b1 = new BankAccount(102,25000.00);
         BankAccount b2 = new SavingsAccounts(103,30000.00,0.2);
         b1.CalculateInterest();
