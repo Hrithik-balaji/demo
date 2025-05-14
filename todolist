@@ -8,7 +8,7 @@ def create(li):
             op=input()
             if op=="N" or op=="n":
                 return True
-def view():
+def view(li):
     if(set !=None):
        for i in range(len(set)):
               print(set[i],end="\n")
