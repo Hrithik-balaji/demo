@@ -17,6 +17,9 @@
       height: 250px;
       width: 500px;
     }
+    button{
+      
+    }
 
   </style>
 </head>
@@ -25,9 +28,11 @@
           <h2>Todolist</h2>
   </header>
   <div class="container">
-    
+    <h3>List:</h3>
   </div>
-  
+  <button class="add">ADD</button>
+  <button class="delete">DELETE</button>
+  <button class="close">CLOSE</button>
   
 </body>
 
