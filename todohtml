@@ -18,6 +18,7 @@
       width: 500px;
     }
     button{
+      word-wrap: 20px;
       
     }
 
