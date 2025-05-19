@@ -10,7 +10,7 @@
           margin:-20px -10px;
     }  
     body{
-    	background-color: 	#FFE4B5;
+    	background-color:#FFE4B5;
     }
     .container{
       background-color: white;
