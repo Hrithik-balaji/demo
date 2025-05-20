@@ -15,7 +15,7 @@
     .container{
       background-color: white;
       height: 250px;
-      width: 500px;
+      width: 475px;
     }
     button{
       word-wrap: 20px;
