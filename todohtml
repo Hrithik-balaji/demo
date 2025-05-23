@@ -18,7 +18,7 @@
       width: 475px;
     }
     button{
-      word-wrap: 20px;
+      
       
     }
 
