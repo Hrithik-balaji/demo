@@ -1,0 +1,12 @@
+class Solution:
+    def duplicateZeros(self, arr: List[int]) -> None:
+        cur = []
+        for a in arr:
+            if a == 0:
+                cur.append(a)
+                cur.append(a)
+            else:
+                cur.append(a)
+        print(cur)
+        cur = cur[:len(arr)]
+        arr[:] = cur
