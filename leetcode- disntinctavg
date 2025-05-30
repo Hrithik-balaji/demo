@@ -1,0 +1,16 @@
+class Solution:
+    def distinctAverages(self, nums: List[int]) -> int:
+        n=len(nums)
+        l=[]
+        while(n!=0):
+            
+            min1=min(nums)
+            max1=max(nums)
+            avg=(min1+max1)/2
+            l.append(avg)
+            nums.remove(min1)
+            nums.remove(max1)
+            n=len(nums)
+        s=set(l)
+        return len(s)
+        
